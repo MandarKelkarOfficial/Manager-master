@@ -97,7 +97,7 @@ _Figure 3: Certificate Generation_
 _Figure 4: Information Display Page_
 
 ![Reports](/static/img/demo.png)
-_Figure 4: Genrated Certificate_
+_Figure 5: Genrated Certificate_
 
 By leveraging modern web technologies, DataHive provides a reliable, scalable, and user-friendly solution for managing student data and generating leaving certificates, ensuring both efficiency and security.
 
