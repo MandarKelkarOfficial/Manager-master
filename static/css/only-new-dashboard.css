@@ -1,0 +1,20 @@
+.cell-mapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+.cell-mapper .sales-boxes.me-calc {
+  min-width: 60%;
+}
+.cell-mapper .sales-boxes.me-todo {
+  min-width: 40%;
+}
+
+@media (max-width: 770px) {
+  .cell-mapper {
+    flex-direction: column;
+  }
+  .cell-mapper .sales-boxes.me-todo {
+    margin-top: 30px;
+  }
+}/*# sourceMappingURL=only-new-dashboard.css.map */

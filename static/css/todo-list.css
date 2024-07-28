@@ -1,0 +1,227 @@
+div#todo-box .calendar-title-text.to-do-title {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+}
+div#todo-box .calendar-title.todo {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0px;
+}
+div#todo-box .calendar-title.todo .calendar-title-text {
+  width: 100%;
+  margin-right: 20px;
+}
+div#todo-box .calendar-title.todo .calendar-title-text input#toto {
+  width: 100%;
+  /* height: 35px; */
+}
+div#todo-box .calendar-title.todo .calendar-button-group button#todo-add {
+  height: 100%;
+  display: flex;
+  padding: 10px 15px;
+  border: 1px solid;
+  background: white;
+  border-color: rgb(187, 187, 187);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+div#todo-box .todo-lists {
+  max-height: 137px;
+  min-height: 137px;
+}
+div#todo-box .todo-functions {
+  height: 40px;
+  margin: 0 20px;
+}
+div#todo-box .todo-functions .filters {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+div#todo-box .todo-functions .filters button.btn {
+  font-size: 14px;
+  margin: 0 0.5em;
+  border-radius: 4px;
+  padding: 0.75em 1.5em;
+  cursor: pointer;
+  background: none;
+  color: #c0b4da;
+  border: 1px solid;
+  letter-spacing: 1px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #c0b4da;
+  border: #c0b4da 1px solid;
+  transition: 250ms ease-out;
+}
+div#todo-box button {
+  background: none;
+  border: none;
+  color: #898093;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+div#todo-box button:focus {
+  outline: none;
+}
+div#todo-box button:hover {
+  cursor: pointer;
+}
+div#todo-box .app {
+  min-height: 267px;
+  max-height: 267px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1em;
+  /* background: #fff; */
+  overflow: hidden;
+}
+div#todo-box .btn {
+  font-size: 14px;
+  margin: 0 0.5em;
+  border-radius: 0.5em;
+  padding: 5px 5px;
+  cursor: pointer;
+  background: none;
+  color: #c0b4da;
+  border: 1px solid;
+  letter-spacing: 1px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #6c7293;
+  border: #c0b4da 1px solid;
+  transition: 250ms ease-out;
+}
+div#todo-box .btn.filters__btn.filters__btn--all {
+  min-width: 50px;
+}
+div#todo-box .btn.form__submit-btn {
+  min-width: 60px;
+}
+div#todo-box .btn:hover,
+div#todo-box .btn:focus {
+  color: #fff;
+  background: #c0b4da;
+}
+div#todo-box .form {
+  width: 100%;
+  padding: 0.9rem 0rem 0 0rem;
+  display: flex;
+}
+div#todo-box .form__input {
+  width: 100%;
+  font-size: 14px;
+  margin: 0 0.5em;
+  border-radius: 0.5em;
+  padding: 0.75em 1.5em;
+  background: none;
+  font-family: "Source Sans Pro", sans-serif;
+  border: #e3e3e3 1px solid;
+  transition: border 250ms ease-out;
+}
+div#todo-box .form__input:focus {
+  border: #c0b4da 1px solid;
+  outline: none;
+}
+div#todo-box .todo-list {
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  flex: 1;
+  max-height: 150px;
+  overflow: scroll;
+  flex-direction: column;
+}
+div#todo-box .todo-list::-webkit-scrollbar {
+  height: 0px;
+  width: 0px;
+  border-radius: 3px;
+  box-shadow: 0px 2px 5px rgba(89, 88, 88, 0.831372549);
+}
+div#todo-box .todo-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  border-radius: 3px;
+  transition: 200ms;
+  color: #4fc08d;
+}
+div#todo-box .todo-list__item:last-child {
+  margin-bottom: 0;
+}
+div#todo-box .todo-list__item.complete {
+  color: #c0b4da;
+}
+div#todo-box .todo-list__item.complete .todo-list__item-content:after {
+  background: #c0b4da;
+}
+div#todo-box .todo-list__item-content {
+  position: relative;
+}
+div#todo-box .todo-list__item-content:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #c0b4da;
+  transition: 250ms ease-out;
+  transform-origin: center;
+  transform: scalex(0);
+}
+div#todo-box .todo-list__item-content:hover:after,
+div#todo-box .todo-list__item-content:focus:after {
+  transform: scalex(1);
+}
+div#todo-box .todo-list__item-remove {
+  margin-left: 0.5em;
+  background: none;
+  border: 1px solid;
+  color: #c0b4da;
+  padding: 0;
+  line-height: 1;
+  width: 2em;
+  border: 1px solid #857979;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 80%;
+}
+div#todo-box .filters {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 1rem 0.2rem 1rem;
+}
+div#todo-box .list-move,
+div#todo-box .list-leave-active,
+div#todo-box .list-enter-active {
+  transition: 500ms cubic-bezier(0.87, -0.41, 0.19, 1.44);
+}
+div#todo-box .list-enter,
+div#todo-box .list-leave-active {
+  transform: translate(100%, 0);
+  opacity: 0;
+}
+
+@media (max-width: 400px) {
+  .sidebar.it_is_mobile ~ .home-section .home-content .sales-boxes .my-cal .calendar .app .filters .btn {
+    font-size: 13px !important;
+    margin: 0 0.2em !important;
+    letter-spacing: 0px !important;
+  }
+  .sidebar.it_is_mobile ~ .home-section .home-content .sales-boxes .my-cal .calendar {
+    padding: 16px !important;
+  }
+}
+div#todo-box .filters {
+  padding: 0 0rem 0.2rem 0rem;
+}/*# sourceMappingURL=todo-list.css.map */

@@ -1,0 +1,471 @@
+@import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
+
+body {
+  background: transparent;
+}
+
+div.material-table {
+  padding: 0;
+}
+
+div.material-table .hiddensearch {
+  /* padding: 0 14px 0 24px; */
+  border-bottom: solid 1px #DDDDDD;
+  display: none;
+  position: sticky;
+  left: 0px;
+  right: 0px;
+}
+
+div.material-table .hiddensearch input {
+  margin: 0;
+  border: transparent 0 !important;
+  height: 48px;
+  color: rgba(0, 0, 0, .84);
+  padding: 0 14px 0 24px;
+}
+
+div.material-table .hiddensearch input:active {
+  border: transparent 0 !important;
+}
+
+div.material-table table {
+  /* table-layout: fixed; */
+}
+
+div.material-table .table-header {
+  height: 64px;
+  padding-left: 24px;
+  padding-right: 14px;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: flex;
+  -webkit-display: flex;
+  border-bottom: solid 1px #DDDDDD;
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  border-radius: 10px 10px 0 0px;
+}
+
+div.material-table .table-header .actions {
+  display: -webkit-flex;
+  margin-left: auto;
+}
+
+div.material-table .table-header .btn-flat {
+  min-width: 36px;
+  padding: 0 8px;
+}
+
+div.material-table .table-header input {
+  margin: 0;
+  height: auto;
+}
+
+div.material-table .table-header i {
+  /* color: rgba(0, 0, 0, 0.54); */
+  font-size: 24px;
+}
+
+div.material-table .table-footer {
+  height: 56px;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 14px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  align-items: center;
+  font-size: 12px !important;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.54);
+  margin-top: 2.9px;
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  border-radius: 0 0px 10px 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+div.material-table .table-footer .dataTables_length {
+  display: -webkit-flex;
+  display: flex;
+}
+
+div.material-table .table-footer label {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.54);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  /* works with row or column */
+
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+div.material-table .table-footer .select-wrapper {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  /* works with row or column */
+
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+div.material-table .table-footer .dataTables_info,
+div.material-table .table-footer .dataTables_length {
+  margin-right: 32px;
+  white-space: nowrap;
+  overflow: scroll;
+  /* text-overflow: ellipsis; */
+}
+
+div.material-table .table-footer .material-pagination {
+  display: flex;
+  -webkit-display: flex;
+  margin: 0;
+}
+
+div.material-table .table-footer .material-pagination li:first-child {
+  margin-right: 24px;
+}
+
+div.material-table .table-footer .material-pagination li a {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+div.material-table .table-footer .select-wrapper input.select-dropdown {
+  margin: 0;
+  border-bottom: none;
+  height: auto;
+  line-height: normal;
+  font-size: 12px;
+  width: 40px;
+  text-align: right;
+}
+
+div.material-table .table-footer select {
+  background-color: transparent;
+  width: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  height: auto;
+  margin-left: 20px;
+}
+
+div.material-table .table-title {
+  font-size: 20px;
+  color: #000;
+}
+
+div.material-table table tr td {
+  padding: 0 0 0 56px;
+  height: 48px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  border-bottom: solid 1px #DDDDDD;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+div.material-table table tr td a {
+  color: inherit;
+}
+
+div.material-table table tr td a i {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+div.material-table table tr {
+  font-size: 12px;
+}
+
+div.material-table table th {
+  font-size: 17px;
+  font-weight: 600;
+  color: #757575;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 0;
+  height: 56px;
+  padding-left: 56px;
+  vertical-align: middle;
+  outline: none !important;
+}
+
+div.material-table table th.sorting_asc,
+div.material-table table th.sorting_desc {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+div.material-table table th.sorting:after,
+div.material-table table th.sorting_asc:after,
+div.material-table table th.sorting_desc:after {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  word-wrap: normal;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  content: "arrow_back";
+  -webkit-transform: rotate(90deg);
+  display: none;
+  vertical-align: middle;
+}
+
+div.material-table table th.sorting:hover:after,
+div.material-table table th.sorting_asc:after,
+div.material-table table th.sorting_desc:after {
+  display: inline-block;
+}
+
+div.material-table table th.sorting_desc:after {
+  content: "arrow_forward";
+}
+
+div.material-table table tbody tr:hover {
+  background-color: #EEE;
+}
+
+div.material-table table th:first-child,
+div.material-table table td:first-child {
+  padding: 0 0 0 24px;
+}
+
+div.material-table table th:last-child,
+div.material-table table td:last-child {
+  padding: 0 20px 0 20px;
+  width: 80px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* @media (max-width: 780px) {
+  thead tr {
+    
+  }
+} */
+
+div.material-table table tr .salaryG {}
+
+div.material-table table tbody tr .compData:hover .fa-circle-info::before {
+  /* content: "\f00c"; */
+  /* color: #04b27d !important; */
+}
+
+
+.compData input[type="radio"] {
+  position: relative !important;
+  left: 0 !important;
+  width: 0;
+}
+
+.row #admin .material-table #datatable_wrapper .datatable .finalbody .odd .compData input[type=radio]:checked~i.fa-solid.fa-circle-info {
+  color: #04b27d !important;
+}
+
+@media (max-width: 767px) {
+
+  /* div.material-table table tr .salaryG {
+    color: rgb(252, 121, 252);
+    display: none;
+  } */
+
+  div.material-table table .startdateG {
+
+    padding-right: 20px;
+  }
+
+  /* [aria-label="Start date: activate to sort column ascending"] {
+    color: purple;
+    display: none;
+  } */
+
+}
+
+@media (max-width: 700px) {
+  /* div.material-table table tr .startdateG {
+    color: rgb(252, 121, 252);
+    display: none;
+  } */
+
+  body {
+    /* overflow-x: scroll; */
+  }
+
+}
+
+/* @media (max-width: 445px) {
+  div.material-table table tr .ageG {
+    color: rgb(252, 121, 252);
+    display: none;
+  }
+}
+
+@media (max-width: 405px) {
+  div.material-table table tr .officeG {
+    color: rgb(252, 121, 252);
+    display: none;
+  }
+}
+
+@media (max-width: 305px) {
+  div.material-table table tr .positionG {
+    color: rgb(252, 121, 252);
+    display: none;
+  }
+} */
+div.material-table table tbody tr .compData .tooltip {
+  visibility: hidden;
+  /* display: none; */
+}
+
+div.material-table table tbody tr .compData:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+
+div.material-table table tbody tr .compData .tooltip {
+  display: inline-block;
+  position: absolute;
+  background-color: #EEE;
+  padding: 8px 15px;
+  margin-top: 40px;
+  right: 4%;
+  color: #101010;
+  opacity: 0;
+  /* width: 100%;
+  height: 100%; */
+  visibility: hidden;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+div.material-table table tr:last-child td .tooltip {
+  bottom: 15px;
+}
+
+div.material-table table tr:nth-last-child(2) td .tooltip {
+  bottom: 15px;
+}
+
+div.material-table table tr:nth-last-child(3) td .tooltip {
+  bottom: 15px;
+}
+
+div.material-table table tr:nth-last-child(4) td .tooltip {
+  bottom: 15px;
+}
+
+div.material-table table tbody tr .compData .tooltip:before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 239px;
+  top: -5px;
+  transform: rotate(45deg);
+  width: 10px;
+  height: 10px;
+  /* background-color: inherit; */
+}
+
+div.material-table table tbody tr .compData .tooltip td {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: purple;
+  text-align: left;
+  vertical-align: middle;
+  height: 30px;
+  /* overflow: scroll; */
+}
+
+div.material-table table tbody tr .compData .tooltip td:first-child {
+  color: rgb(19, 19, 19);
+}
+
+div.material-table table tbody tr .compData .tooltip td:last-child {
+  color: rgb(56, 56, 56);
+}
+
+/* div.material-table .table-footer label span {
+  white-space: nowrap;
+  overflow: scroll;
+
+}
+
+div.material-table .table-footer label select {
+  white-space: nowrap;
+  overflow: scroll;
+}
+
+div.material-table .table-footer label span::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+div.material-table .table-footer label select::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+
+div.material-table .table-footer label::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+div.material-table .table-footer label span::-webkit-scrollbar-track {
+  width: 0px;
+  height: 0px;
+}
+
+div.material-table .table-footer label span::-webkit-scrollbar-thumb {
+  width: 0px;
+  height: 0px;
+}
+
+div.material-table .table-footer label::-webkit-scrollbar-track {
+  width: 0px;
+  height: 0px;
+}
+
+div.material-table .table-footer label::-webkit-scrollbar-thumb {
+  width: 0px;
+  height: 0px;
+} */
+
+div.material-table .table-footer .dataTables_info::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+div.material-table .table-footer .dataTables_length::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+i.fa-solid.fa-circle-info {
+  color: #d0d0d0 !important;
+}

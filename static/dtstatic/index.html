@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MyPen - DataTables</title>
+  <link rel='stylesheet' href='./materialize.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="/eel.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="iam.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="row">
+    <div id="admin" class="col s12">
+      <div class="card material-table">
+        <div class="table-header">
+          <span class="table-title">All DataTable</span>
+          <div class="actions">
+            <a href="#add_users" id="myBtn" class="modal-trigger waves-effect btn-flat nopadding"><i
+                class="material-icons">person_add</i></a>
+            <a href="#" class="search-toggle waves-effect btn-flat nopadding"><i class="material-icons">search</i></a>
+          </div>
+        </div>
+        <table id="datatable" class="table dt-responsive nowrap">
+          <thead>
+            <tr>
+              <th>Nam</th>
+              <th>E-Mail</th>
+              <th>Department</th>
+              <th>Age</th>
+              <th>Enroll No.</th>
+              <th>Mobile No.</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+          <tbody class="finalbody">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="addperson">
+    <br>
+    <button id="myBtn">Add Modal</button>
+    <br>
+  </div> -->
+
+  <!-- The Modal -->
+  <!-- <div id="myModal" class="modal_"> -->
+  <!-- <div class="modal-content">
+    <div class="modal-header">
+      <span class="close"><i class="fas fa-xmark"></i></span>
+      <h2>Update Your Table Easily</h2>
+    </div>
+    <div class="modal-body">
+      <input type="text" class="name" size="30" placeholder="Enter name" />
+      <input type="text" class="position" size="30" placeholder="Enter Position" />
+      <input type="text" class="office" size="30" placeholder="Enter Office" />
+      <input type="number" class="age" size="30" placeholder="Enter Age" />
+      <input type="text" class="datestart" size="30" placeholder="Enter Start date" />
+      <input type="text" class="salary" size="30" placeholder="Enter Salary" />
+    </div>
+    <div class="modal-footer">
+      <p align="center">
+        <button id="_myBtn">Add Modal</button>
+      </p>
+    </div>
+  </div> -->
+  <!-- </div> -->
+  <!-- 
+  <div class="pop-up">
+    <div class="pop-up-content">
+      <h5>You, First fill all data in form!</h5>
+      <button class="close-button">Okay</button>
+    </div>
+  </div> -->
+
+  <!-- <div class="tempInfo">
+    <div class="tempInfo-content">
+      <h5>You, First fill all data in form!</h5>
+    </div>
+  </div> -->
+
+
+  <!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js'></script>
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js'></script> -->
+  <script src="./script.js"></script>
+  <!-- <script src="./iam.js"></script> -->
+  <script>
+    $('.table-title').on('click', function () {
+      alert('s')
+    })
+  </script>
+</body>
+
+</html>

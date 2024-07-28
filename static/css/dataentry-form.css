@@ -1,0 +1,477 @@
+/*
+  Document
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+input,
+select,
+button {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/*
+    Form
+  */
+.dp-form > div ~ div {
+  margin-top: 20px;
+}
+.dp-form > div ~ .bb-form-btn-d {
+  display: flex;
+  justify-content: center;
+}
+.dp-form > div.is-hidden {
+  display: none;
+}
+.dp-form-label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 0.875rem;
+  color: #6c7293;
+  font-weight: 700;
+}
+.dp-form-control {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  font: 0.875rem/1.5 sans-serif;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.dp-form input {
+  font-size: 16px;
+  font-weight: 400;
+}
+.dp-form input#name-2:focus:valid {
+  border: 1px solid rgb(107, 255, 141) !important;
+  background-color: rgba(176, 255, 194, 0.553) !important;
+}
+.dp-form input#name-2:focus:invalid {
+  border: 1px solid rgb(246, 108, 108);
+  background-color: rgb(255, 176, 176);
+}
+.dp-form input#email-2:focus:valid {
+  border: 1px solid rgb(107, 255, 141) !important;
+  background-color: rgba(176, 255, 194, 0.553) !important;
+}
+.dp-form input#email-2:focus:invalid {
+  border: 1px solid rgb(246, 108, 108) !important;
+  background-color: rgb(255, 176, 176) !important;
+}
+.dp-form input#issue-by-m-2:focus:valid {
+  border: 1px solid rgb(107, 255, 141) !important;
+  background-color: rgba(176, 255, 194, 0.553) !important;
+}
+.dp-form input#issue-by-m-2:focus:invalid {
+  border: 1px solid rgb(246, 108, 108) !important;
+  background-color: rgb(255, 176, 176) !important;
+}
+.dp-form input#mobile-num-2:focus:valid {
+  border: 1px solid rgb(107, 255, 141) !important;
+  background-color: rgba(176, 255, 194, 0.553) !important;
+}
+.dp-form input#mobile-num-2:focus:invalid {
+  border: 1px solid rgb(246, 108, 108) !important;
+  background-color: rgb(255, 176, 176) !important;
+}
+.dp-form input#enroll-number-2:focus:valid {
+  border: 1px solid rgb(107, 255, 141) !important;
+  background-color: rgba(176, 255, 194, 0.553) !important;
+}
+.dp-form input#enroll-number-2:focus:invalid {
+  border: 1px solid rgb(246, 108, 108) !important;
+  background-color: rgb(255, 176, 176) !important;
+}
+.dp-form input#post-number-2:focus:valid {
+  border: 1px solid rgb(107, 255, 141) !important;
+  background-color: rgba(176, 255, 194, 0.553) !important;
+}
+.dp-form input#post-number-2:focus:invalid {
+  border: 1px solid rgb(246, 108, 108) !important;
+  background-color: rgb(255, 176, 176) !important;
+}
+.dp-form input#age:focus:valid {
+  border: 1px solid rgb(107, 255, 141) !important;
+  background-color: rgba(176, 255, 194, 0.553) !important;
+}
+.dp-form input#age:focus:invalid {
+  border: 1px solid rgb(246, 108, 108) !important;
+  background-color: rgb(255, 176, 176) !important;
+}
+.dp-form input#s-admission-year:focus:valid {
+  border: 1px solid rgb(107, 255, 141) !important;
+  background-color: rgba(176, 255, 194, 0.553) !important;
+}
+.dp-form input#s-admission-year:focus:invalid {
+  border: 1px solid rgb(246, 108, 108) !important;
+  background-color: rgb(255, 176, 176) !important;
+}
+.dp-form input#s-admission-day:focus:valid {
+  border: 1px solid rgb(107, 255, 141) !important;
+  background-color: rgba(176, 255, 194, 0.553) !important;
+}
+.dp-form input#s-admission-day:focus:invalid {
+  border: 1px solid rgb(246, 108, 108) !important;
+  background-color: rgb(255, 176, 176) !important;
+}
+.dp-form select {
+  height: 46px;
+}
+
+/*
+    Contact Form
+  */
+.dataentry-e-form {
+  width: 100%;
+  /* max-width: 568px; */
+  padding: 10px;
+  /* background-color: #fefefe; */
+  border-radius: 12px;
+  /* box-shadow: 0px 1px 3px 0 rgb(0 0 0 / 13%); */
+  box-sizing: border-box;
+}
+.dataentry-e-form #message {
+  max-width: 100%;
+}
+.dataentry-e-form--loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.dataentry-e-form--sent > div ~ div {
+  margin: 0;
+}
+.dataentry-e-form .bb-form-btn-d .form-button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 5px 10px;
+  font: 0.875rem/1.5 sans-serif;
+  background-color: #e7d4f9;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0px 0px;
+  width: 100% !important;
+  height: 40px;
+  box-sizing: border-box;
+}
+.dataentry-e-form .bb-form-btn-d .form-button.data-bbx.data_b1 {
+  margin-right: 25px !important;
+}
+.dataentry-e-form .name-class {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dataentry-e-form .name-class.with-department {
+  justify-content: flex-start;
+}
+.dataentry-e-form .entry-wrapper {
+  width: 100%;
+}
+.dataentry-e-form .name-class .entry-wrapper:first-child {
+  width: 100%;
+}
+.dataentry-e-form .name-class .entry-wrapper input#enroll-number-2 {
+  position: relative;
+  z-index: 6;
+}
+.dataentry-e-form .name-class .entry-wrapper .trans-error {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  padding: 5px;
+  color: rgba(255, 0, 0, 0.4392156863);
+  transform: translateY(-2em);
+  transition: all 0.3s ease;
+}
+.dataentry-e-form .name-class .entry-wrapper .trans-error.error-translateY {
+  opacity: 1;
+  transform: translateY(-0.5em);
+}
+.dataentry-e-form .wrapper-f-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dataentry-e-form .name-class .entry-wrapper .name-format {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dataentry-e-form .name-class .entry-wrapper-2 .name-format {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dataentry-e-form .gender-married {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dataentry-e-form .gender-married .form-item {
+  width: 100%;
+}
+.dataentry-e-form .gender-married .form-item .form-gender {
+  height: 46px;
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  margin-left: 1px;
+  /* position: absolute; */
+  color: #757575;
+  border: 1px solid #bbb;
+  align-items: center;
+  border-radius: 4px 4px 4px 4px;
+  background: #ffffff;
+  /* border-right: 0px; */
+  justify-content: space-between;
+}
+.dataentry-e-form .gender-married .form-item .form-gender label.gender {
+  height: 100%;
+  width: 100%;
+  /* margin-right: 0px; */
+  display: flex;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+.dataentry-e-form .gender-married .form-item .form-gender label.gender input[type=radio] {
+  opacity: 0;
+  width: 0;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  position: absolute;
+}
+.dataentry-e-form .gender-married .form-item .form-gender label.gender span {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  border-radius: 4px;
+  justify-content: center;
+}
+.dataentry-e-form .gender-married .form-item .form-gender label.gender:first-child {
+  margin-right: 2.5px;
+}
+.dataentry-e-form .gender-married .form-item .form-gender label.gender:last-child {
+  margin-left: 2.5px;
+}
+.dataentry-e-form .gender-married .form-item .form-gender input[type=radio] ~ span {
+  background: #e7d4f9;
+}
+.dataentry-e-form .gender-married .form-item .form-gender input[type=radio]:checked ~ span {
+  background: #c0b4da;
+  color: white;
+}
+@media (min-width: 680px) {
+  .dataentry-e-form .wrapper-f-div {
+    flex-direction: row;
+  }
+  .dataentry-e-form .name-class .entry-wrapper .name-format {
+    flex-direction: row;
+  }
+  .dataentry-e-form .name-class .entry-wrapper .name-format input:first-child {
+    margin-right: 5px;
+  }
+  .dataentry-e-form .name-class .entry-wrapper .name-format input:nth-child(3) {
+    margin-left: 5px;
+  }
+  .dataentry-e-form .name-class .entry-wrapper-2 .name-format {
+    flex-direction: row;
+  }
+  .dataentry-e-form .name-class .entry-wrapper-2 .name-format select:first-child {
+    margin-right: 5px;
+  }
+  .dataentry-e-form .name-class .entry-wrapper-2 .name-format input:nth-child(3) {
+    margin-left: 5px;
+  }
+  .dataentry-e-form .state-dist-subdist .wrapper-f-inner-di:nth-child(2) {
+    margin-left: 25px;
+  }
+  .dataentry-e-form .state-dist-subdist .wrapper-f-inner-di:last-child {
+    width: 100%;
+  }
+  .dataentry-e-form .name-class {
+    flex-direction: row;
+  }
+  .dataentry-e-form .wrapper-f-div .wrapper-f-inner-div:last-child {
+    width: 60%;
+    margin-left: 25px;
+  }
+  .dataentry-e-form .wrapper-f-div .wrapper-f-inner-div-2:first-child {
+    width: 60%;
+    margin-right: 25px;
+  }
+  .dataentry-e-form .wrapper-f-inner-di:last-child {
+    width: 81%;
+    margin-left: 25px;
+  }
+  .dataentry-e-form .name-class .entry-wrapper:first-child {
+    width: 38%;
+    margin-right: 25px;
+  }
+  .dataentry-e-form .gender-married {
+    flex-direction: row;
+  }
+  .dataentry-e-form .gender-married .form-item {
+    width: 100%;
+  }
+  .dataentry-e-form .gender-married .form-item .form-gender {
+    height: 46px;
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    margin-left: 1px;
+    /* position: absolute; */
+    color: #757575;
+    border: 1px solid #bbb;
+    align-items: center;
+    border-radius: 4px 4px 4px 4px;
+    background: #ffffff;
+    /* border-right: 0px; */
+    justify-content: space-between;
+  }
+  .dataentry-e-form .gender-married .form-item:nth-child(1) {
+    margin-right: 25px;
+  }
+  .dataentry-e-form .gender-married .form-item:nth-child(3) {
+    margin-left: 25px;
+  }
+}
+@media (max-width: 679.99px) {
+  .dataentry-e-form .wrapper-f-div {
+    flex-direction: column;
+  }
+  .dataentry-e-form .wrapper-f-div .wrapper-f-inner-div:last-child {
+    margin-top: 20px;
+  }
+  .dataentry-e-form .wrapper-f-div .wrapper-f-inner-di:last-child {
+    margin-top: 20px;
+  }
+  .dataentry-e-form .name-class .entry-wrapper-2 + .wrapper-f-inner-di {
+    margin-top: 20px;
+  }
+  .dataentry-e-form .wrapper-f-div .wrapper-f-inner-div-2:last-child {
+    margin-top: 20px;
+  }
+  .dataentry-e-form .state-dist-subdist .wrapper-f-inner-di:nth-child(2) {
+    margin-top: 20px;
+  }
+  .dataentry-e-form .name-class .entry-wrapper .name-format {
+    flex-direction: column;
+  }
+  .dataentry-e-form .name-class .entry-wrapper .name-format input:first-child {
+    margin-bottom: 5px;
+  }
+  .dataentry-e-form .name-class .entry-wrapper .name-format input:nth-child(3) {
+    margin-top: 5px;
+  }
+  .dataentry-e-form .name-class .entry-wrapper-2 .name-format {
+    flex-direction: column;
+  }
+  .dataentry-e-form .name-class .entry-wrapper-2 .name-format select:first-child {
+    margin-bottom: 5px;
+  }
+  .dataentry-e-form .name-class .entry-wrapper-2 .name-format input:nth-child(3) {
+    margin-top: 5px;
+  }
+  .dataentry-e-form .name-class {
+    flex-direction: column;
+  }
+  .dataentry-e-form .name-class .entry-wrapper .name-format {
+    flex-direction: column;
+  }
+  .dataentry-e-form .name-class .entry-wrapper:last-child {
+    margin-top: 20px;
+  }
+  .dataentry-e-form .gender-married {
+    flex-direction: column;
+  }
+  .dataentry-e-form .gender-married .form-item {
+    width: 100%;
+  }
+  .dataentry-e-form .gender-married .form-item .form-gender {
+    height: 46px;
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    margin-left: 1px;
+    /* position: absolute; */
+    color: #757575;
+    border: 1px solid #bbb;
+    align-items: center;
+    border-radius: 4px 4px 4px 4px;
+    background: #ffffff;
+    /* border-right: 0px; */
+    justify-content: space-between;
+  }
+  .dataentry-e-form .gender-married .form-item:nth-child(1) {
+    margin-right: 0px !important;
+  }
+  .dataentry-e-form .gender-married .form-item:nth-child(2) {
+    margin-top: 20px;
+  }
+  .dataentry-e-form .gender-married .form-item:nth-child(3) {
+    margin-top: 20px;
+    margin-left: 0px !important;
+  }
+}
+.dataentry-e-form .wrapper-f-inner-div,
+.dataentry-e-form .wrapper-f-inner-di,
+.dataentry-e-form .wrapper-f-inner-div-2 {
+  width: 100%;
+}
+.dataentry-e-form .phone-class {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.dataentry-e-form .phone-class i.fa.fa-phone,
+.dataentry-e-form .phone-class i.fa-envelope,
+.dataentry-e-form .phone-class i.fa-person {
+  height: 42px;
+  display: flex;
+  width: 48px;
+  margin-left: 1px;
+  position: absolute;
+  color: #ae95e3;
+  border-right: 1px solid #bbb;
+  align-items: center;
+  border-radius: 3px 0 0 3px;
+  background: #f5eaff;
+  /* border-right: 0px; */
+  justify-content: center;
+}
+.dataentry-e-form .phone-class i.fa-person {
+  margin-top: 1px !important;
+}
+.dataentry-e-form .phone-class input {
+  border-radius: 4px;
+  padding-left: 55px;
+}
+
+.sidebar.darker ~ .home-section .home-content .col-15 .bg-secondary .dataentry-e-form .gender-married .form-item .form-gender {
+  background: #181818 !important;
+  border: 1px solid #82a7f2 !important;
+}
+
+.sidebar.darker ~ .home-section .home-content .col-15 .bg-secondary .dataentry-e-form .gender-married .form-item .form-gender input[type=radio] ~ span {
+  background: #191c24 !important;
+  background: #111111 !important;
+  color: #757575 !important;
+}
+
+.sidebar.darker ~ .home-section .home-content .col-15 .bg-secondary .dataentry-e-form .gender-married .form-item .form-gender input[type=radio]:checked ~ span {
+  background: #242935 !important;
+  background: #818af1 !important;
+  color: white !important;
+}
+
+/*
+    Button
+  *//*# sourceMappingURL=dataentry-form.css.map */

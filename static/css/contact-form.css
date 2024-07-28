@@ -1,0 +1,88 @@
+/*
+  Document
+*/
+/*
+    Form
+  */
+.form > div ~ div {
+  margin-top: 20px;
+}
+.form > div ~ .bb-form-btn-d {
+  display: flex;
+  justify-content: center;
+}
+.form > div.is-hidden {
+  display: none;
+}
+.form-label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 0.875rem;
+  color: #6c7293;
+  font-weight: 700;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  font: 0.875rem/1.5 sans-serif;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.form input#name:valid {
+  border: 1px solid rgb(107, 255, 141) !important;
+  background-color: rgba(176, 255, 194, 0.553) !important;
+}
+.form input#email:valid {
+  border: 1px solid rgb(107, 255, 141) !important;
+  background-color: rgba(176, 255, 194, 0.553) !important;
+}
+.form input#email:focus:invalid {
+  border: 1px solid rgb(246, 108, 108) !important;
+  background-color: rgb(255, 176, 176) !important;
+}
+
+/*
+    Contact Form
+  */
+.contact-form {
+  width: 100%;
+  /* max-width: 568px; */
+  padding: 10px;
+  /* background-color: #fefefe; */
+  border-radius: 12px;
+  /* box-shadow: 0px 1px 3px 0 rgb(0 0 0 / 13%); */
+  box-sizing: border-box;
+}
+.contact-form #message {
+  max-width: 100%;
+}
+.contact-form--loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.contact-form--sent > div ~ div {
+  margin: 0;
+}
+
+/*
+    Button
+  */
+.form-button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 5px 10px;
+  font: 0.875rem/1.5 sans-serif;
+  background-color: #e7d4f9;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0px 10px;
+  width: 40%;
+  box-sizing: border-box;
+}/*# sourceMappingURL=contact-form.css.map */

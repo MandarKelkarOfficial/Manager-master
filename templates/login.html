@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/trianx.png') }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataHive Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/loginfom.css') }}">
+</head>
+
+<body>
+    <div class="form-structor">
+        <div class="signup">
+            <h2 class="form-title" id="signup"><span>or</span>Sign up</h2>
+            <!-- <form action="{{ url_for('signup') }}" method="POST"> -->
+            <form id="signup-form" method="POST">
+                <div class="form-holder">
+                    <div class="entry-wrapper">
+                        <input type="text" class="input u-name" id="si-username" name="si-username" placeholder="Name"
+                            required />
+                        <span id="username-error" class="trans-error">Username already taken!</span>
+                    </div>
+
+                    <input type="email" class="input u-email" id="si-email" name="si-email" placeholder="Email"
+                        required />
+                    <input type="password" class="input u-pass" id="si-password" name="si-password"
+                        placeholder="Password" required />
+                </div>
+                <button type="submit" id="sig" class="submit-btn signup-user">Sign up</button>
+            </form>
+        </div>
+
+        <div class="login slide-up">
+            <div class="center" id="login-form">
+                <h2 class="form-title" id="login"><span>or</span>Log in</h2>
+                <!-- <form id="login-from" action="{{ url_for('login') }}" method="POST"> -->
+                <form id="login-from" method="POST">
+                    <div class="form-holder">
+                        <input type="text" class="input  u-name-in" id="username" name="username" placeholder="Username"
+                            required />
+                        <img src="{{ url_for('static', filename='img/put_this_on_sign_up.jpg') }}" style="display:none;"
+                            name="profile_pica" alt="">
+                        <input type="password" class="input u-pass-in" id="password" name="password"
+                            placeholder="Password" required />
+                    </div>
+                    <!-- <a href="../index.html" style="text-decoration: none;"> -->
+                    <button type="submit" id="log" class="submit-btn login-user">
+                        Log in</button>
+                    <!-- </a> -->
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="{{ url_for('static', filename='js/loginfom.js') }}"></script>
+</body>
+
+</html>

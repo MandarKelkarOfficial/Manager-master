@@ -1,0 +1,211 @@
+/*
+  Document
+*/
+
+// html {
+//     font-family: sans-serif;
+//     font-size: 100%;
+//     line-height: 1.5;
+//     background-color: #f8f8f8;
+//     color: #3d3d3d;
+// }
+
+// body {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin: 0;
+//     min-height: 100vh;
+//     font-size: 1rem;
+// }
+
+/*
+    Form
+  */
+
+.form {
+    & > div {
+        & ~ div {
+            margin-top: 20px;
+        }
+        & ~ .bb-form-btn-d {
+            display: flex;
+            justify-content: center;
+        }
+        &.is-hidden {
+            display: none;
+        }
+    }
+    &-label {
+        display: inline-block;
+        margin-bottom: 5px;
+        font-size: 0.875rem;
+        color: #6c7293;
+        font-weight: 700;
+    }
+    &-control {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        font: 0.875rem/1.5 sans-serif;
+        color: #333;
+        background-color: #fff;
+        border: 1px solid #bbb;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input#name:valid {
+        border: 1px solid rgb(107, 255, 141) !important;
+        background-color: rgba(176, 255, 194, 0.553) !important;
+    }
+    // input#name:invalid {
+    //     border: 1px solid rgb(246, 108, 108);
+    //     background-color: rgb(255, 176, 176);
+    // }
+    input#email:valid {
+        border: 1px solid rgb(107, 255, 141) !important;
+        background-color: rgba(176, 255, 194, 0.553) !important;
+    }
+    input#email:focus:invalid {
+        border: 1px solid rgb(246, 108, 108) !important;
+        background-color: rgb(255, 176, 176) !important;
+    }
+}
+
+/*
+    Contact Form
+  */
+
+.contact-form {
+    width: 100%;
+    /* max-width: 568px; */
+    padding: 10px;
+    /* background-color: #fefefe; */
+    border-radius: 12px;
+    /* box-shadow: 0px 1px 3px 0 rgb(0 0 0 / 13%); */
+    box-sizing: border-box;
+    #message {
+        max-width: 100%;
+    }
+    &--loading {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+    &--errors {
+    }
+    &--sent {
+        & > div ~ div {
+            margin: 0;
+        }
+    }
+}
+
+/*
+    Button
+  */
+
+.form-button {
+    appearance: none;
+    padding: 5px 10px;
+    font: 0.875rem/1.5 sans-serif;
+    background-color: #e7d4f9;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0px 10px;
+    width: 40%;
+    box-sizing: border-box;
+}
+
+// $form-border-colour: #c3c3c3;
+// $form-border-radius: 5px;
+// $form-transition-duration: 0.5s;
+// $form-transition-timing: cubic-bezier(0.25, 0.75, 0.25, 1);
+
+// /*
+//   Document
+// */
+
+// html {
+//   font-size: 100%;
+//   font-family: sans-serif;
+// }
+
+// body {
+//   width: 100%;
+//   min-height: 100vh;
+//   margin: 0;
+
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+
+//   background-image: radial-gradient(#fff 0%, #eee 100%);
+//   color: #333;
+// }
+
+// .container {
+//   width: 100%;
+//   max-width: 720px;
+//   padding: 20px;
+// }
+
+// h1,
+// p {
+//   text-align: center;
+// }
+
+// form {
+//   &[data-state] {
+//     position: relative;
+
+//     & > * {
+//       transition: all $form-transition-duration $form-transition-timing;
+//     }
+
+//     .sent {
+//       position: absolute;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, 50%);
+//       opacity: 0;
+//     }
+
+//   }
+
+//   &[data-state="sending"] {
+//     pointer-events: none;
+//     user-select: none;
+
+//     & > div {
+//       opacity: 0.5;
+//       transition-duration: 0s;
+//     }
+
+//     .sent {
+//       opacity: 0;
+//     }
+//   }
+
+//   &[data-state="sent"] {
+//     pointer-events: none;
+//     user-select: none;
+
+//     & > * {
+//       opacity: 0;
+//     }
+
+//     .sent {
+//       transform: translate(-50%, -50%);
+//       opacity: 1;
+//     }
+
+//   }
+
+//   &[data-state="error"] {}
+
+//   & > div {
+//     margin-bottom: 1rem;
+//   }
+// }
